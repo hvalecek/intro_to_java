@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro to java</title>
+</head>
+<body>
+    <label>What language was created to add interactivity to the Web? <input class="language" type="text"></input></label>
+
+    <script>
+
+    let codeLibrary = prompt("What library would you prefer to use, Vue, React or jQuery?");
+
+    alert("You said " + codeLibrary);
+
+    let txtLanguage = document.querySelector('.language');
+
+    txtLanguage.addEventListener('focusout',
+            (event) => { 
+                alert("You said " + txtLanguage.value + ". JavaScript was created to add interactivity to the Web).");
+             });
+
+    </script>
+</body>
+</html>
